@@ -6,7 +6,7 @@ public class introduction {
 
     public static void main(String[] args) {
 
-        ArrayList<Integer> items = new ArrayList();
+        ArrayList<Integer> items = new ArrayList<Integer>();
         items.add(1);
         items.add(2);
         items.add(3);
