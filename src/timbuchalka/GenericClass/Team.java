@@ -1,6 +1,8 @@
 package timbuchalka.GenericClass;
 
-public class Team {
+import java.util.ArrayList;
+
+public class Team<T> {
 
     private String name;
     int played = 0;
