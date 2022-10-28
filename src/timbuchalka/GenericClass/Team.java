@@ -10,7 +10,7 @@ public class Team<T> {
     int lost = 0;
     int tied = 0;
 
-    private ArrayList<Player> members = new ArrayList<>();
+    private ArrayList<T> members = new ArrayList<>();
 
     public Team(String name) {
         this.name = name;
@@ -20,13 +20,13 @@ public class Team<T> {
         return name;
     }
 
-    public boolean addPlayer(Player player) {
+    public boolean addPlayer(T player) {
         if (members.contains(player)) {
-            System.out.println(player.getName() + " is already on this team");
+            System.out.println(((Player)player).getName() + " is already on this team");
             return false;
         } else {
             members.add(player);
-            System.out.println(player.getName() + " picked for team " + this.name);
+            System.out.println(((Player)player).getName() + " picked for team " + this.name);
             return true;
         }
     }
@@ -35,7 +35,7 @@ public class Team<T> {
         return this.members.size();
     }
 
-    public void matchResult(Team opponent, int ourScore, int theirScore) {
+    public void matchResult(Team<T> opponent, int ourScore, int theirScore) {
         if(ourScore > theirScore) {
             won++;
         } else if(ourScore == theirScore) {
