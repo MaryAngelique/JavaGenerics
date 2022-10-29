@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d54034b4-e752-4e0e-9082-11d636a2f6df" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/timbuchalka/GenericClass/Challenge/BaseballPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/timbuchalka/GenericClass/Challenge/FootballPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/timbuchalka/GenericClass/Challenge/SoccerPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/timbuchalka/GenericClass/Challenge/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/timbuchalka/GenericClass/Challenge/Leauge.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +40,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/timbuchalka/GenericClass/Challenge" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="timbuchalka.GenericClass.Challenge" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
