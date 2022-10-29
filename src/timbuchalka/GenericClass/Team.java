@@ -36,12 +36,17 @@ public class Team<T> {
     }
 
     public void matchResult(Team<T> opponent, int ourScore, int theirScore) {
+        String message;
+
         if(ourScore > theirScore) {
             won++;
+            message = "beat";
         } else if(ourScore == theirScore) {
             tied++;
+            message = "drew with ";
         } else {
             lost++;
+            message = "lost to ";
         }
         played++;
         if(opponent != null) {
@@ -51,6 +56,17 @@ public class Team<T> {
 
     public int ranking() {
         return (won * 2) + tied;
+    }
+
+    @Override
+    public int compareTo(Team<T> team) {
+        if(this.ranking() > team.ranking()) {
+            return -1;
+        } else if(this.ranking() < team.ranking()) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
 
 }
